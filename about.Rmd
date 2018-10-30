@@ -2,4 +2,6 @@
 title: "About"
 ---
 
-"la Caixa" fellow at Columbia University, NY.
+I am a clinical psychiatrist with a deep interest in population health. My research looks at the broad sociocultural determinants of psychiatric outcomes and uses real-world data for causal inference. I've held positions as psychiatry consultant, research associate and graduate-level instructor in psychiatry, epidemiology and clinical management. 
+
+After obtaining my medical degree (UAM, Madrid), I was an NIH-Fogarty fellow in epidemiology (UM, Ann Arbor). Then, I completed a residency in psychiatry (La Paz Hospital, Madrid) and undertook training in quantitative methods for epidemiology (UAM, Madrid) and psychoanalytic psychotherapy (UPC, Madrid). Currently, I am a "la Caixa" scholar at Columbia University (NY). 

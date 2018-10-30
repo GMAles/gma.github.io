@@ -9,5 +9,7 @@ navbar:
       href: mailto:<gm2794@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/GMAles/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/gonzalo-mart%C3%ADnez-al%C3%A9s-4048088b/
 output:
   html_document
