@@ -2,4 +2,4 @@
 title: "Gonzalo Martínez-Alés"
 ---
 
-MD, MSc, Psychiatrist
+MD, MSc, Psychiatrist.

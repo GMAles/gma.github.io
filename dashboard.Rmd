@@ -1,0 +1,78 @@
+---
+title: "dashboard"
+author: "GMA"
+date: "31/10/2018"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+install.packages("plotly")
+```
+
+
+```{r}
+library(tidyverse)
+library(flexdashboard)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+library(ggridges)
+data(instacart)
+```
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+```{r}
+instacart_sample = 
+  instacart %>% 
+  sample_n(1000)
+```
+
+# First Chart
+
+Most frequently sold products, scatter plot
+
+```{r}
+instacart_sample %>% 
+  count(product_name) %>% 
+  top_n(5) %>% 
+  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "scatter"
+          ) %>% 
+  layout(title = "Top5", 
+         xaxis = list(title = "Product Name")) 
+top_items
+```
+
+# Second Chart
+
+Most frequently sold products, box plot
+
+```{r}
+instacart_sample %>% 
+  count(product_name) %>% 
+  top_n(5) %>% 
+  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "bar"
+          ) %>% 
+  layout(title = "Top5", 
+         xaxis = list(title = "Product Name")) 
+top_items
+```
+
+# Third Chart
+
+Most frequently sold products, line plot
+
+```{r}
+instacart_sample %>% 
+  count(product_name) %>% 
+  top_n(5) %>% 
+  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "box" 
+          ) %>% 
+  layout(title = "Top5", 
+         xaxis = list(title = "Product Name")) 
+top_items
+```
